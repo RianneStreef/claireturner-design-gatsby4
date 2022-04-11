@@ -12,8 +12,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby-template",
+    siteUrl: "https://www.claireturner-design.com",
+    title: "claire-turner-design",
   },
   plugins: [
     {
@@ -21,7 +21,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-CR9V44788C", // Google Analytics / GA
+          "G-LBHJ61Q3QL", // Google Analytics / GA
         ],
         pluginConfig: {
           // Puts tracking script in the head instead of the body
@@ -35,11 +35,15 @@ module.exports = {
     },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-fontawesome-css`,
+
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "siteName",
-        short_name: "companyName",
+        name: "Claire Turner Design",
+        short_name: "Claire Turner Design",
         start_url: "/",
         background_color: "#e30613",
         theme_color: "#ff00ff",
@@ -70,6 +74,28 @@ module.exports = {
       resolve: "gatsby-plugin-layout",
       options: {
         component: require.resolve("./src/components/Layout.jsx"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat`, `source sans pro\:100,300,400`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://yahoo.us5.list-manage.com/subscribe/post?u=df564ab66c93f2beea766baa2&amp;id=29af27e7d8",
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        accessToken: process.env.GATSBY_CONTENTFUL_TOKEN,
+        spaceId: process.env.GATSBY_CONTENTFUL_ID,
       },
     },
   ],

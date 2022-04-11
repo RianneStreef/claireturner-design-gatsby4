@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import "../styles/global.css";
 
 const Layout = ({ children }) => {
-  let [language, setLanguage] = useState("french");
+  let [language, setLanguage] = useState("english");
   let languageToUse = "";
   let languageInStorage = "";
 
@@ -25,18 +24,7 @@ const Layout = ({ children }) => {
   );
   return (
     <div className="layout">
-      <Header
-        language={language}
-        setLanguage={setLanguage}
-        languageToUse={languageToUse}
-      />
-      <section className="main">{childrenWithProps}</section>
-
-      <Footer
-        language={language}
-        setLanguage={setLanguage}
-        languageToUse={languageToUse}
-      />
+      <section className="content">{childrenWithProps}</section>
     </div>
   );
 };

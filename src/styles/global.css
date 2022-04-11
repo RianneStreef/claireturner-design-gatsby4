@@ -1,42 +1,55 @@
-html {
-  font-size: calc(60% + 0.8vmin);
+@font-face {
+  font-family: "Andalemo";
+  src: local("Andalemo"), url(../fonts/andalemo.ttf) format("truetype");
 }
 
-* {
-  font-size: 1rem;
+:root {
+  --color-highlight: #dddbdb;
 }
 
-main {
-  max-width: 40rem;
-  margin: 0 auto;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  line-height: 25px;
 }
 
-h1 {
-  font-size: 2.2rem;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Andalemo";
+  text-align: center;
+  margin: auto;
 }
 
-h2 {
-  font-size: 1.6rem;
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
 }
 
-h3 {
-  font-size: 1.3rem;
+.hidden-mobile {
+  display: none;
 }
 
-.layout {
+.button-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  width: 30px;
-  margin: 20px;
+.hidden {
+  display: none;
 }
 
 .flag {
   width: 25px;
-  margin: 5px;
+}
+
+.flag:hover {
+  cursor: pointer;
 }
 
 .opaque {
@@ -54,6 +67,8 @@ h3 {
   margin: 10px;
 }
 
-.header-placeholder {
-  height: 80px;
+@media (min-width: 768px) {
+  .hidden-mobile {
+    display: block;
+  }
 }
