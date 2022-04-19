@@ -10,6 +10,7 @@ const StyledBurger = styled.div`
   height: 2rem;
   margin: 20px;
   z-index: 999;
+
   div {
     width: 2rem;
     height: 0.25rem;

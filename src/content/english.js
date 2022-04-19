@@ -12,6 +12,8 @@ export const english = {
   message: "Message",
   send: "Send",
 
+  aboutMeHeader: "Claire Turner - Designs & Art Classes ",
+
   intro1:
     "Hi everyone my name is Claire I'm a London born artist living in Annecy with my hubby and two boys. I work to produce original and fun Children's illustrations, great for unique gifts and a brilliant way to decorate any nursery or playroom. My boys are my inspiration and my love for drawing and passion for art has made this little company a reality, thanks also to forced time off my regular job due to a pregnancy and lockdown. A Chelsea Arts college student in Textiles and design and victim of the financial crisis at the time, I started off my working career waitressing.",
   intro2:

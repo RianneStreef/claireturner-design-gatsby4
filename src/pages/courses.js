@@ -71,11 +71,13 @@ const ProductsPage = (props) => {
                   <ReactMarkdown children={course.description.description} />
                 )}
               </div>
-              <img
-                src={course.image.file.url}
-                alt="course flyer"
-                className="course-flyer"
-              />
+              <div className="course-flyer-container">
+                <img
+                  src={course.image.file.url}
+                  alt="course flyer"
+                  className="course-flyer"
+                />
+              </div>
             </div>
           </div>
         </div>

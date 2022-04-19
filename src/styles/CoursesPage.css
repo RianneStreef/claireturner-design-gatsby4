@@ -20,6 +20,14 @@
   margin: 10px;
 }
 
+.course-flyer-container {
+  padding: 50px;
+}
+
+.course-flyer {
+  width: 100%;
+}
+
 .courses-list {
   display: flex;
   flex-direction: row;
@@ -55,9 +63,6 @@
 
 @media (min-width: 768px) {
   .course-list {
-    margin: 50px;
-  }
-  .course-flyer {
     margin: 50px;
   }
 
