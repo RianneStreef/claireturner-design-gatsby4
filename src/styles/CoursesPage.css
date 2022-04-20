@@ -1,3 +1,9 @@
+.course-contact-container {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding-top: 30px;
+  margin: 30px 10px;
+}
+
 .class-card {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 10px;
@@ -98,5 +104,8 @@
   }
   .course-flyer {
     width: 100%;
+  }
+  .course-contact-container {
+    margin: 30px 50px;
   }
 }

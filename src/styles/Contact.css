@@ -80,6 +80,9 @@ form {
 }
 
 @media (min-width: 1024px) {
+  .contact-container {
+    margin: 30px 50px;
+  }
   .contact > * {
     width: 50%;
   }

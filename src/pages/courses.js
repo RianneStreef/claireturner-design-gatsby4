@@ -100,7 +100,7 @@ const ProductsPage = (props) => {
         <link rel="canonical" href="https://www.claireturner-design.com/" />
       </Helmet>
       <Header language={language} languageToUse={languageToUse} />
-      <div className="contact-container">
+      <div className="course-contact-container">
         <div className="stamp-container">
           <img src={stamp} className="stamp" />
         </div>
