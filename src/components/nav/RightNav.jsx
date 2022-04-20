@@ -17,7 +17,7 @@ const Ul = styled.ul`
   li {
     padding-right: 25px;
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
@@ -55,7 +55,7 @@ const Ul = styled.ul`
       width: 30px;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     flex-flow: column nowrap;
     background-color: #dddbdb;
     position: fixed;
@@ -73,7 +73,7 @@ const Dash = styled.span`
   width: 30px;
   margin: 0 20px;
   text-align: center;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: none;
   }
 `;
