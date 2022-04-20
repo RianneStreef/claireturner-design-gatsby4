@@ -12,6 +12,7 @@ export const french = {
   message: "Message",
   send: "Envoyer",
 
+  aboutMeHeader: "Claire Turner - Designs & Art Classes ",
   intro1:
     "Salut tout le monde je m'appelle Claire je suis une artiste née à Londres vivant à Annecy avec mon mari et mes deux garçons. Je travaille pour produire des illustrations originales et amusantes pour enfants, idéales pour des cadeaux uniques et une manière brillante de décorer n'importe quelle chambre de bébé ou salle de jeux. Mes garçons sont mon inspiration et mon amour pour le dessin et ma passion pour l'art ont fait de cette petite entreprise une réalité, grâce également à un congé forcé de mon travail régulier en raison d'une grossesse et d'un confinement. Étudiante au Chelsea Arts College en Textile et design et victime de la crise financière à l'époque, j'ai commencé ma carrière professionnelle en tant que serveuse.",
   intro2:

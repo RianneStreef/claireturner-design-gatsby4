@@ -13,7 +13,6 @@ const Intro = (props) => {
     : (languageToUse = content.french);
   return (
     <div className="intro" id="about">
-      <h2>{languageToUse.aboutMeHeader}</h2>
       <div className="intro-inner-container">
         <div className="intro-text">
           <p>{languageToUse.intro1} </p>
