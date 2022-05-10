@@ -50,6 +50,7 @@ export const french = {
   price: "Price",
   age: "Age",
   class: "Stage",
+  description: "Description",
 
   copyright: "Claire Turner Design - Tous droits réservés.",
   mentionsLegal: "Mentions Légales",

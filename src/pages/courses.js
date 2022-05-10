@@ -61,14 +61,20 @@ const ProductsPage = (props) => {
                 <h4>{languageToUse.price}:</h4>
 
                 <p>{course.price}</p>
-                {course.description && (
+                {/* {course.description && (
                   <ReactMarkdown>
-                    <div>{course.description.description}</div>
+                    <div>
+                      <h4>{languageToUse.description}</h4>
+                      {course.description.description}
+                    </div>
                   </ReactMarkdown>
-                )}
+                )} */}
 
                 {course.description && (
-                  <ReactMarkdown children={course.description.description} />
+                  <>
+                    <h4>{languageToUse.description}:</h4>
+                    <ReactMarkdown children={course.description.description} />
+                  </>
                 )}
               </div>
               <div className="course-flyer-container">
